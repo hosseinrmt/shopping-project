@@ -16,6 +16,7 @@ let totalCartPrice = 0;
 clearCart.addEventListener("click", () => {
   cartContent.innerHTML = "";
   DOMtoalPrice.innerHTML = "your cart is empty!";
+  cartItem.innerHTML = 0;
 });
 cartBtn.addEventListener("click", openModal);
 backDrop.addEventListener("click", closeModal);
