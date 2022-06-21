@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>shopping</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="./build/tailwind.css" />
+</head>
+
+<body class="container grid mx-auto xl:max-w-5xl font-sans">
+  <div class="z-10 bg-black h-screen lg:w-[64rem] md:w-[48rem] w-[40rem] fixed opacity-50 hidden black-screen-modal">
+  </div>
+
+  <!-- this is navbar section-->
+  <div class="navbar flex justify-between items-center flex-row h-14 bg-gray-200 p-4">
+    <span><i class="fa-solid fa-bars fa-2x cursor-pointer"></i></span>
+    <p class="font-bold">hossein shopping</p>
+    <span><i class="fa-solid fa-cart-plus fa-2x cursor-pointer cart-btn"></i>
+      <span class="cart-Item p-1 bg-black text-white rounded-full text-[14px]">0</span>
+    </span>
+  </div>
+
+  <!-- this is modal section-->
+  <div style="width: 30rem"
+    class="bg-white absolute justify-self-center top-32 h-auto rounded-md z-20 text-center hidden flex-col p-6 cart-modal">
+    <p class="my-2 text-lg font-semibold">your cart</p>
+
+    <!-- cart products -->
+    <div class="cart-content">
+      <!-- <div class="grid grid-cols-6 gap-4 my-4">
+      <img class="w-max rounded-md col-span-2" src="https://shopping-cart-indol.vercel.app/images/product-1.jpeg" />
+      <div class="flex flex-col justify-evenly col-span-2">
+        <p class="font-semibold">queen panel bed</p>
+        <p class="opacity-70 font-bold">10.99 $</p>
+      </div>
+
+      <div class="flex flex-col">
+        <span class="cursor-pointer"><i class="fa-solid fa-angle-up"></i></span>
+        <p>1</p>
+        <span class="cursor-pointer"><i class="fa-solid fa-angle-down"></i></span>
+      </div>
+
+      <span class="my-auto cursor-pointer"><i class="fa-solid fa-trash"></i></span>
+    </div> -->
+    </div>
+
+    <!-- bottom section of cart -->
+    <div class="flex justify-around items-center my-8">
+      <p class="text-green-800 font-semibold total-price"></p>
+      <button class="border-2 border-red-700 p-2 rounded-md clear-cart">
+        clear cart
+      </button>
+      <button class="bg-gray-200 border-2 border-black p-2 rounded-md cart-confirm-btn">
+        confirm
+      </button>
+    </div>
+  </div>
+
+  <h1 class="m-8 text-4xl justify-self-center font-bold">Our Products</h1>
+
+  <!-- this is our products -->
+  <div class="content h-screen grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-white justify-items-center gap-20 p-8 products">
+    <!-- <div class="product bg-gray-200 rounded-md max-w-sm flex flex-col h-80 box-border">
+      <img class="rounded-t-md" src="https://shopping-cart-indol.vercel.app/images/product-1.jpeg" />
+      <div class="flex justify-around m-4">
+        <p class="text-green-700">10.99 $</p>
+        <p>queen panel bed</p>
+      </div>
+      <button class="bg-white w-28 mx-auto rounded-md h-8">
+        add to cart
+      </button>
+    </div> -->
+  </div>
+
+  <script type="module" src="../src/js/script.js"></script>
+</body>
+
+</html>
